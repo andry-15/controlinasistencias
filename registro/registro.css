@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;200;400;600;800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+}
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg,#7ec0ec,#83d5e6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.register-container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.register-card {
+    width: 470px;
+    background: white;
+    padding: 35px 40px;
+    border-radius: 20px;
+    box-shadow:0 15px 40px rgba(0, 0, 0, 0.20);
+    text-align: center;
+    position: relative;
+}
+.btn-home {
+    position: absolute;
+
+    top: 20px;
+    right: 20px;
+
+    color: #1976d2;
+    font-size: 20px;
+
+    text-decoration: none;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.btn-home:hover {
+    color: #0d47a1;
+    transform: scale(1.15);
+}
+.logo img {
+    width: 200px;
+    height: auto;
+    margin-bottom: 5px;
+}
+h1 {
+    color: #123f72;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.subtitle {
+    color: #000000;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+.input-group {
+    text-align: left;
+    margin-bottom: 16px;
+}
+.input-group label {
+    display: block;
+    color: #333;
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 6px;
+}
+.input-group input,
+.input-group select {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #7a7a7a;
+    border-radius: 10px;
+    outline: none;
+    font-size: 13px;
+    background: white;
+    transition: 0.3s;
+
+}
+.input-group input:focus,
+.input-group select:focus {
+    border-color: #1687c9;
+    box-shadow:0 0 0 3px rgba(22, 135, 201, 0.10);
+}
+.password-container {
+    position: relative;
+}
+.eye {
+    position: absolute;
+    right: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 17px;
+    user-select: none;
+}
+.eye:hover {
+    color: #2196f3;
+}
+button {
+    width: 100%;
+    padding: 13px;
+    border: none;
+    border-radius: 10px;
+    background: #1687c9;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s;
+}
+button:hover {
+    background: #004976;
+    transform: translateY(-2px);
+}
+.login-link {
+    margin-top: 20px;
+}
+.login-link p {
+    color: #777;
+    font-size: 13px;
+}
+.login-link a {
+    color: #27a957;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+}
+.login-link a:hover {
+    text-decoration: underline;
+}
+/* Quitar flechas del input number en Chrome, Safari y Edge */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.registro-container {
+    position: relative;
+}
+
+.btn-home {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+
+    color: #1976d2;
+    font-size: 20px;
+    text-decoration: none;
+
+    transition: 0.3s;
+}
+
+.btn-home:hover {
+    color: #0d47a1;
+    transform: scale(1.15);
+}
+
