@@ -1,40 +1,34 @@
 // MOSTRAR / OCULTAR CONTRASEÑA
-const registerForm = document.getElementById("registerForm");
+const togglePassword = document.getElementById("togglePassword");
 const password = document.getElementById("password");
+const loginForm = document.getElementById("loginForm");
 
+if (togglePassword && password) {
+    togglePassword.addEventListener("click", function () {
+        const icon = this.querySelector("i");
 
-registerForm.addEventListener("click", function () {
+        if (password.type === "password") {
+            // Mostrar contraseña
+            password.type = "text";
 
-    const icon = this.querySelector("i");
+            // Cambiar a ojo cerrado / tachado
+            icon.classList.remove("fa-eye");
+            icon.classList.add("fa-eye-slash");
+        } else {
+            // Ocultar contraseña
+            password.type = "password";
 
-    if (password.type === "password") {
+            // Cambiar a ojo abierto
+            icon.classList.remove("fa-eye-slash");
+            icon.classList.add("fa-eye");
+        }
+    });
+}
 
-        // Mostrar contraseña
-        password.type = "text";
-
-        // Cambiar a ojo cerrado
-        icon.classList.remove("fa-eye");
-        icon.classList.add("fa-eye-slash");
-
-    } else {
-
-        // Ocultar contraseña
-        password.type = "password";
-
-        // Cambiar a ojo abierto
-        icon.classList.remove("fa-eye-slash");
-        icon.classList.add("fa-eye");
-
-    }
-
-});
-const login = document.getElementById("login");
-const register = document.getElementById("register");
-
-login.addEventListener("click", ()=>{
-    alert("Redireccionando al Inicio de Sesión...");
-});
-register.addEventListener("click", ()=>{
-    alert("Redireccionando al Registro...");
-
-});
+if (loginForm) {
+    loginForm.addEventListener("submit", function (event) {
+        event.preventDefault();
+        const usuario = document.getElementById("usuario")?.value.trim();
+        console.log("Inicio de sesión para:", usuario);
+    });
+}
