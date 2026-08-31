@@ -1,8 +1,9 @@
 // MOSTRAR / OCULTAR CONTRASEÑA
+const registerForm = document.getElementById("registerForm");
 const password = document.getElementById("password");
-const togglePassword = document.getElementById("togglePassword");
 
-togglePassword.addEventListener("click", function () {
+
+registerForm.addEventListener("click", function () {
 
     const icon = this.querySelector("i");
 

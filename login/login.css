@@ -137,25 +137,23 @@ button:hover {
     position: relative;
     width: 100%;
 }
-
 .password-container input {
     width: 100%;
     padding: 13px 45px 13px 15px;
     box-sizing: border-box;
 }
 
-.password-container .eye {
+.eye {
     position: absolute;
     right: 15px;
     top: 50%;
     transform: translateY(-50%);
     cursor: pointer;
-    color: #777;
-    font-size: 16px;
-    z-index: 10;
+    font-size: 17px;
+    user-select: none;
 }
 
-.password-container .eye:hover {
+.eye:hover {
     color: #2196f3;
 }
 .login-container {
@@ -166,11 +164,9 @@ button:hover {
     position: absolute;
     top: 20px;
     right: 20px;
-
     color: #1976d2;
     font-size: 20px;
     text-decoration: none;
-
     transition: 0.3s;
 }
 

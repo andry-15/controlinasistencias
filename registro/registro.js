@@ -1,9 +1,10 @@
 const registerForm = document.getElementById("registerForm");
 const password = document.getElementById("password");
 // MOSTRAR CONTRASEÑA
-const togglePassword =
-    document.getElementById("togglePassword");
+const togglePassword = document.getElementById("togglePassword");
+
 togglePassword.addEventListener("click", function () {
+    
     const icon = this.querySelector("i");
 
     if (password.type === "password") {
